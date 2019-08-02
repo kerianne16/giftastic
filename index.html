@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GifTastic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12" id="buttons-view"></div>
+        </div>
+        <hr />
+        <div class="row">
+
+            <div class="col-md-12" id="graphics-view"></div>
+        </div>
+        <hr />
+        <div class="row">
+
+            <div class="col-md-12">
+                <form id="giphy-form" onSubmit="return displayDisney('');">
+                    <label for="giphy-input"><b>Add a Disney giphy:</b></label>
+                    <br>
+                    <input onFocus='this.select()' type="text" id="giphy-input" value=''>
+                    <br>
+
+                    <input id="add-giphy" type="submit" value="Submit" style="margin-top: 10px">
+                </form>
+            </div>
+        </div>
+
+
+        <script src="./app.js"></script>
+</body>
